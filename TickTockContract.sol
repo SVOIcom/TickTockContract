@@ -145,7 +145,7 @@ contract TickTockContract {
 
     // Function that will be called on tick or tock transaction
     // It implements contract wake up logic
-    function onTickTockF(bool isTock) external {
+    onTickTock(bool isTock) external {
         // Check if the cycle is right
         require(isTock == TICK_TOCK, INCORRECT_TIME_TO_WAKE_UP);
         tvm.accept();

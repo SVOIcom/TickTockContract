@@ -1,4 +1,7 @@
-pragma solidity >= 0.6.0;
+//Uncomment for old compilers
+//pragma solidity >= 0.6.0;
+pragma ton-solidity >= 0.35.0;
+
 pragma AbiHeader time;
 pragma AbiHeader pubkey;
 pragma AbiHeader expire;

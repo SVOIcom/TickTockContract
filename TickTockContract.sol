@@ -1,5 +1,4 @@
-pragma solidity >= 0.6.0;
-
+pragma ton-solidity >= 0.35.0;
 
 pragma AbiHeader time;
 pragma AbiHeader pubkey;
@@ -19,6 +18,8 @@ pragma AbiHeader expire;
     '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
 */
 
+import "./interfaces/ISleepyContractInterface.sol";
+
 
 // Structure that holds wake up info
 struct WakeUpStruct {
@@ -26,11 +27,6 @@ struct WakeUpStruct {
         TvmCell functionParameters;
 }
 
-
-// Interface to implement for contract to be called 
-abstract contract ISleepyContract {
-    function wakeMeUp(TvmCell callParameters) public virtual;
-}
 
 
 // Contract that will wake up other contracts

@@ -1,4 +1,4 @@
-pragma ton-solidity >= 0.35.0;
+pragma ton-solidity ^ 0.39.0;
 
 pragma AbiHeader time;
 pragma AbiHeader pubkey;
@@ -94,6 +94,7 @@ contract TickTockContract {
     function getTickTockState()
         public
         view
+        responsible
         returns (bool)
     {
         tvm.accept();
@@ -104,6 +105,7 @@ contract TickTockContract {
     function getMinimumDelta()
         public
         view
+        responsible
         returns (uint256)
     {
         tvm.accept();
@@ -122,6 +124,7 @@ contract TickTockContract {
     function timeQueueLen(uint256 time) 
         public
         view
+        responsible
         returns (uint16)
     {
         tvm.accept();

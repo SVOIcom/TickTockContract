@@ -1,4 +1,4 @@
-pragma ton-solidity ^ 0.42.0;
+pragma ton-solidity >= 0.39.0;
 
 pragma AbiHeader time;
 pragma AbiHeader pubkey;
@@ -211,5 +211,9 @@ contract TickTockContract {
                 wakeUpShedule[timeToWakeUp][maxId] = WakeUpStruct(contractAddress, callParameters);
             }
         }
+    }
+    
+    receive() external {
+        // Thanks!
     }
 }

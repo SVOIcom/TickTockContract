@@ -1,4 +1,7 @@
 # TiсkTockContract
+
+Updated for compiler version 0.42.0
+
 This is a prototype of future wake up contract for other contracts.
 
 To wake up a contract, it must implement certain interface which is defined inside of TickTockContract.sol.\

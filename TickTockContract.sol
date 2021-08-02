@@ -213,7 +213,7 @@ contract TickTockContract {
         }
     }
     
-    receive() external {
-        // Thanks!
-    }
+    receive() external {}
+    
+    fallback() external { revert(); }
 }

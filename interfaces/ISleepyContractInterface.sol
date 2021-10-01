@@ -1,4 +1,4 @@
 //Sleepy contract interface
 abstract contract ISleepyContract {
-    function wakeMeUp(TvmCell callParameters) public virtual;
+    function wakeMeUp(TvmCell callParameters) external;
 }
